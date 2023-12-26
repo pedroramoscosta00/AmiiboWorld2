@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,300,0,0" />
+  <script src="app.js" defer></script>
+  <title>Amiibo World</title>
+</head>
+
+<body>
+  <header>
+    <h1>Amiibo World</h1>
+    <p>Explore a coleção incrível de Amiibos</p>
+    <div class="filter-container">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Escreva o nome do Amiibo que quer encontrar">
+        <button id="search-button">Pesquisar</button>
+      </div>
+      <div>
+        <label id="text-filter" for="series-filter">Filtre por jogo:</label>
+        <select id="series-filter">
+          <option value="All">All</option>
+          <option value="Super Mario">Super Mario</option>
+          <option value="The Legend of Zelda">The Legend of Zelda</option>
+        </select>
+      </div>
+      <button type="button" id="sortAlphabetically"><span
+          class="material-symbols-outlined">sort_by_alpha</span></button>
+    </div>
+  </header>
+
+  <div class="amiibos" id="amiibos"></div>
+
+  <footer>
+    <p>&copy; 2023 Amiibo World. Todos os direitos reservados.</p>
+  </footer>
+</body>
+
+</html>
