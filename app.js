@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     async function fetchAmiibos() {
       try {
-        const res = await fetch(`https://www.amiiboapi.com/api/amiibo`);
+        const res = await fetch(`https://www.amiiboapi.com/api/amiibo/`);
         const data = await res.json();
 
         console.log("API Responde: ", data)
